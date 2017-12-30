@@ -8,6 +8,7 @@ ENV PATH    $PATH:$GOROOT/bin:$GOPATH/bin
 RUN echo "Install build dependencies" && \
     yum -y install \
       docker \
+      gcc \
       git \
       make \
       rsync \
