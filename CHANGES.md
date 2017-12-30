@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.3.1
+
+- Bugfix: Moved docker image to non-tmp directory
+
 ## 0.3.0
 
 - Feature: Added README
