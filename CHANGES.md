@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.3.0
+
+- Feature: Bundled Lambda docker image as tarball
+
 ## 0.2.3
 
 - Bugfix: Syntax error

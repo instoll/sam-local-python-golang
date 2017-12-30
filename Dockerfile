@@ -7,6 +7,7 @@ RUN echo "Install build dependencies" && \
       curl \
       docker \
       git \
+      jq \
       make \
       openssl \
       python2 \
@@ -17,3 +18,8 @@ RUN echo "Install build dependencies" && \
     go get -u github.com/golang/dep/cmd/dep && \
     echo "Install AWS SAM LOCAL dependencies" && \
     go get github.com/awslabs/aws-sam-local
+
+COPY download-frozen-image-v2.sh /
+
+RUN echo "Downloading Lambda image" && \
+    /download-frozen-image-v2.sh /tmp lambci/lambda:python2.7
