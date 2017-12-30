@@ -19,8 +19,8 @@ RUN echo "Install build dependencies" && \
     echo "Install AWS SAM LOCAL dependencies" && \
     go get github.com/awslabs/aws-sam-local && \
     echo "Downloading Lambda image" && \
-    mkdir /tmp/lambda-python2.7 && \
-    /download-frozen-image-v2.sh /tmp/lambda-python2.7 lambci/lambda:python2.7 && \
+    mkdir /docker-images/lambda-python2.7 && \
+    /download-frozen-image-v2.sh /docker-images/lambda-python2.7 lambci/lambda:python2.7 && \
     rm /download-frozen-image-v2.sh && \
     echo "Remove build dependencies" && \
     apk del jq
