@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.2.3
+
+- Bugfix: Syntax error
+
 ## 0.2.2
 
 - Feature: Installed SAM Local via Go
