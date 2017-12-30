@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.2.2
+
+- Feature: Installed SAM Local via Go
+
 ## 0.2.1
 
 - Bugfix: Missing dep
