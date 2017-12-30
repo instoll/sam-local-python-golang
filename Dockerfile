@@ -15,7 +15,9 @@ RUN echo "Install build dependencies" && \
       python2 \
       py2-pip \
       rsync \
-      wget
+      wget && \
+    echo "Install Go dependencies" && \
+    go get -u github.com/golang/dep/cmd/dep
 
 WORKDIR /tmp
 
