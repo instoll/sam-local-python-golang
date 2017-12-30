@@ -4,6 +4,7 @@
 
 ## 0.3.0
 
+- Feature: Added README
 - Feature: Bundled Lambda docker image as tarball
 
 ## 0.2.3
