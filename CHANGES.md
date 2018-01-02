@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.7.0
+
+- Feature: Switched to amazonlinux
+
 ## 0.6.0
 
 - Feature: Installed aufs-util from Alpine edge repository
