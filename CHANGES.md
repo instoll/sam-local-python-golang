@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.6.0
+
+- Feature: Installed aufs-util from Alpine edge repository
+
 ## 0.5.0
 
 - Feature: Bundled eawsy/aws-lambda-go-shim:latest image
