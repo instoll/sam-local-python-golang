@@ -2,7 +2,9 @@
 
 ## Next
 
-- Minor: Updated README
+## 0.5.0
+
+- Feature: Bundled eawsy/aws-lambda-go-shim:latest image
 
 ## 0.4.0
 

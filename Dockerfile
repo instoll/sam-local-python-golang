@@ -18,9 +18,10 @@ RUN echo "Install build dependencies" && \
     go get -u github.com/golang/dep/cmd/dep && \
     echo "Install AWS SAM LOCAL dependencies" && \
     go get github.com/awslabs/aws-sam-local && \
-    echo "Downloading Lambda image" && \
+    echo "Downloading Lambda images" && \
     mkdir -p /docker-images/lambda-python2.7 && \
     /download-frozen-image-v2.sh /docker-images/lambda-python2.7 lambci/lambda:python2.7 && \
+    /download-frozen-image-v2.sh /docker-images/aws-lambda-go-shim eawsy/aws-lambda-go-shim:latest && \
     rm /download-frozen-image-v2.sh && \
     echo "Install Spy filewatcher" && \
     cd /tmp && \
@@ -29,4 +30,6 @@ RUN echo "Install build dependencies" && \
     chmod 0755 spy_linux_amd64 && \
     mv spy_linux_amd64 /usr/bin/spy && \
     echo "Remove build dependencies" && \
-    apk del jq
+    apk del jq && \
+    echo "Install Caddy HTTP server.." && \
+    curl https://getcaddy.com | bash -s personal http.cors
