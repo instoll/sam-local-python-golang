@@ -2,6 +2,12 @@
 
 ## Next
 
+- Minor: Updated README
+
+## 0.4.0
+
+- Feature: Installed spy file watcher
+
 ## 0.3.1
 
 - Bugfix: Moved docker image to non-tmp directory

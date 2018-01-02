@@ -51,8 +51,8 @@ The typical `/run.sh` looks like this:
     sleep 2
 
     # Load built-in image into container.
-    tar -cC /tmp/lambda-python2.7 | docker load
-    rm -Rf /tmp/lambda-python2.7
+    tar -cC /docker-images/lambda-python2.7 | docker load
+    rm -Rf /docker-images/lambda-python2.7
 
     # Start API Gateway simulator.
     aws-sam-local local start-api
