@@ -1,8 +1,9 @@
-FROM golang:1.9.2-alpine3.6
+FROM golang:1.9.2-alpine3.7
 
 COPY download-frozen-image-v2.sh /
 
 RUN echo "Install build dependencies" && \
+    apk add -U --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing aufs-util && \
     apk --no-cache add \
       bash \
       build-base \
