@@ -7,8 +7,6 @@ RUN echo "Install OS dependencies" && \
     yum -y install \
       findutils \
       git \
-      python27 \
-      python27-pip \
       rsync \
       wget \
       zip && \
