@@ -2,6 +2,11 @@
 
 ## Next
 
+## 0.8.0
+
+- Cleanup: Removed python dependencies
+- Feature: Update SAM Local for Go 1.x support
+
 ## 0.7.0
 
 - Feature: Switched to amazonlinux
