@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.9.0
+
+- Feature: Upgraded SAM Local to 0.2.10
+
 ## 0.8.0
 
 - Cleanup: Removed python dependencies
