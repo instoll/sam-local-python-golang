@@ -2,6 +2,10 @@
 
 ## Next
 
+## 0.10.0
+
+- Feature: Upgraded SAM Local to newer SAM CLI
+
 ## 0.9.0
 
 - Feature: Upgraded SAM Local to 0.2.10
